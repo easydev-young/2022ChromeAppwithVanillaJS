@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital,wght@0,400;1,300&display=swap");
+@import "reset.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 250px;
+  padding: 5px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.niceBox {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 15px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 0.8);
+}
+
+.todoHeader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+}
+
+.todoHeader__weather {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.todoHeader__weather span:last-child {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.todoMain__greeting {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#greeting {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+#image-form {
+  margin-top: 5px;
+}
+
+.clockBox__clock {
+  padding-bottom: 10px;
+  opacity: 0.6;
+}
+
+.clockBox .c1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.clockBox .c2 {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.clockBox .d1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.clockBox .d2 {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.green-board {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+  border-radius: 10px;
+  /* display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column; */
+  width: 320px;
+  height: 270px;
+  opacity: 0.6;
+  background: #0c7064;
+  border: 3px solid #14660f99;
+  box-shadow: 5px 5px 10px 1px rgb(0 0 0 / 80%);
+}
+
+.todo {
+  position: absolute;
+  bottom: 5px;
+  right: 4px;
+  margin: 15px;
+  max-height: 256px;
+  overflow-y: auto;
+  width: 320px;
+}
+
+.todoMain__todo-list {
+  opacity: 0.6;
+  background: #0c7064;
+  border: 3px solid #14660f99;
+  box-shadow: 5px 5px 10px 1px rgb(0 0 0 / 80%);
+  border-radius: 10px;
+}
+
+.todo-list li {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+}
